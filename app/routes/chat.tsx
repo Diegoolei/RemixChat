@@ -14,7 +14,7 @@ interface Chats {
 
 export default function ChatPage() {
     const chat = useLoaderData<Chats[]>();
-    return <main id="content">
+    return <main id="chat">
         <>
             <ChatList chats={chat} />
             <Link to="/chat">New Chat</Link>

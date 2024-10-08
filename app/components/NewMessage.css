@@ -1,83 +1,28 @@
+html, body {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  height: 100%; /* Asegura que el body ocupe toda la altura */
+  overflow: hidden; /* Evita scrollbars en toda la página */
+}
+
+#content {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: stretch; /* Asegura que ocupe toda la altura */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
 #chat-container {
-  max-width: 30rem;
-  margin: 3rem auto;
-  padding: 1rem;
-  border-radius: 0; /* Eliminar bordes redondeados */
-  background-color: transparent; /* Hacer el fondo transparente */
-  box-shadow: none; /* Eliminar sombra */
+  width: 66.33vw; /* Mantiene un ancho fijo */
+  max-width: 900px; /* Establece un ancho máximo si es necesario */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alinear mensajes y formulario en columna */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
 }
 
-#messages {
-  flex-grow: 1;
-  overflow-y: auto;
-  max-height: 300px; /* Ajusta según sea necesario */
-  min-height: 150px; /* Set a minimum height for the messages box */
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: none; /* Eliminar el borde */
-  border-radius: 0; /* Eliminar bordes redondeados */
-  background-color: var(--color-primary-white); /* Mantener el fondo blanco */
-  display: flex;
-  flex-direction: column; /* Asegura que los mensajes se apilen verticalmente */
-}
-
-.message {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border-radius: 5px; /* Mantener bordes redondeados en mensajes */
-  max-width: 70%; /* Limita el ancho de los mensajes */
-}
-
-.message.user {
-  background-color: var(--color-primary-200);
-  align-self: flex-end; /* Mensajes del usuario a la derecha */
-  text-align: right; /* Alinear el texto a la derecha */
-}
-
-.message.bot {
-  background-color: var(--color-secondary-red);
-  align-self: flex-start; /* Mensajes del bot a la izquierda */
-  text-align: left; /* Alinear el texto a la izquierda */
-}
-
-#message-form {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem; /* Espaciado entre el área de mensajes y el formulario */
-}
-
-#message-form input {
-  flex-grow: 1;
-  margin-right: 0.5rem;
-  padding: 0.75rem; /* Aumentar el padding para mayor comodidad */
-  border: none;
-  border-radius: 24px; /* Mantener bordes redondeados en el input */
-  background-color: var(--color-primary-white);
-  color: var(--color-primary-800);
-}
-
-.form-actions {
-  display: flex;
-}
-
-.form-actions button {
-  padding: 0.75rem 1.5rem; /* Ajustar el padding del botón */
-  background-color: var(--color-primary-300);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border: none; /* Eliminar borde del botón */
-  border-radius: 24px; /* Mantener bordes redondeados en el botón */
-}
-
-.form-actions button:hover {
-  background-color: var(--color-primary-600);
-}
-
-.form-actions button:disabled {
-  background-color: var(--color-primary-300);
-  color: var(--color-primary-200);
-  cursor: not-allowed;
+/* Media Queries */
+@media (max-width: 600px) {
+  #chat-container {
+    width: 100%; /* Ajusta el ancho en pantallas pequeñas */
+  }
 }
