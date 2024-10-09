@@ -1,1 +1,271 @@
-{"messages":[{"text":"Hola","id":1,"user":"bot"},{"text":"","id":2,"user":"user"},{"text":"¿Qué tal?","id":3,"user":"user"},{"text":"## Mensaje Extenso\nEste es un mensaje muy largo que contiene varios elementos de **formato**. Aquí hay una lista:\n- Primer elemento\n- Segundo elemento\n- Tercer elemento\nY un bloque de código:\n```\nprint(\"Hola, mundo!\")\n```","id":4,"user":"bot"},{"text":"😊👍","id":5,"user":"user"},{"text":"¡Hola, mundo!","id":6,"user":"bot"},{"text":"### Sección con Citas\n> Esta es una cita famosa de alguien importante.\n> - Anónimo\n\nAquí hay más información sobre la cita.","id":7,"user":"bot"},{"text":"¿Cómo te va? @usuario","id":8,"user":"user"},{"text":"No sé qué decir...\n\n#### Subtítulo\n- Un punto\n- Otro punto\n\n**Negrita** y _cursiva_ combinadas.","id":9,"user":"bot"},{"text":"Este es un mensaje que contiene caracteres especiales: !@#$%^&*()","id":10,"user":"user"},{"text":"## Mensaje de Prueba\nPara probar límites, aquí hay un mensaje muy largo:\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, nunc nec congue varius, justo lectus fermentum arcu, non congue felis sem et urna. Integer venenatis convallis erat, vel convallis metus. Aenean a nulla orci. Cras vehicula ligula at nulla volutpat, in fermentum turpis cursus. Fusce ut nisi lorem. Vivamus egestas purus ut erat porttitor, at venenatis mi interdum.","id":11,"user":"bot"},{"text":" ","id":12,"user":"user"},{"text":"El día de la fecha me comí un ratón. Repetido: El día de la fecha me comí un ratón.","id":13,"user":"bot"},{"text":"¿Esto es una prueba?","id":14,"user":"user"},{"text":"Ningún problema","id":15,"user":"bot"},{"text":"## Lista Anidada\n- Elemento 1\n  - Sub-elemento 1.1\n  - Sub-elemento 1.2\n- Elemento 2\n\n**Conclusión:** Esta es una prueba de Markdown con contenido diverso.","id":16,"user":"bot"},{"text":"A","id":17,"user":"user"},{"text":"Este mensaje tiene un emoji raro: 🤖✨","id":18,"user":"bot"},{"text":"### Comparativa\n| Producto | Precio | Disponibilidad |\n|----------|--------|----------------|\n| Producto A | $10.00 | En stock |\n| Producto B | $15.00 | Agotado |","id":19,"user":"bot"},{"text":"Final de prueba","id":20,"user":"bot"},{"text":"Buen día","id":21,"user":"user"},{"text":"Diego Test","id":22,"user":"user"},{"text":"*Diego*","id":23,"user":"user"},{"text":"**Diego**","id":24,"user":"user"},{"text":"Diego\\n Diego","id":25,"user":"user"},{"text":"Diego \\n","id":26,"user":"user"},{"text":"\\n","id":27,"user":"user"},{"text":"n","id":28,"user":"user"},{"text":"\\\\n","id":29,"user":"user"},{"text":"/\\n","id":30,"user":"user"}]}
+{
+  "chat": [
+    {
+      "chatID": "12345",
+      "messages": [
+        {
+          "text": "Hola",
+          "id": 1,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:00Z"
+        },
+        {
+          "text": "",
+          "id": 2,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:01Z"
+        },
+        {
+          "text": "¿Qué tal?",
+          "id": 3,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:02Z"
+        },
+        {
+          "text": "## Mensaje Extenso\nEste es un mensaje muy largo que contiene varios elementos de **formato**. Aquí hay una lista:\n- Primer elemento\n- Segundo elemento\n- Tercer elemento\nY un bloque de código:\n```\nprint(\"Hola, mundo!\")\n```",
+          "id": 4,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:03Z"
+        },
+        {
+          "text": "😊👍",
+          "id": 5,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:04Z"
+        },
+        {
+          "text": "¡Hola, mundo!",
+          "id": 6,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:05Z"
+        },
+        {
+          "text": "### Sección con Citas\n> Esta es una cita famosa de alguien importante.\n> - Anónimo\n\nAquí hay más información sobre la cita.",
+          "id": 7,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:06Z"
+        },
+        {
+          "text": "¿Cómo te va? @usuario",
+          "id": 8,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:07Z"
+        },
+        {
+          "text": "No sé qué decir...\n\n#### Subtítulo\n- Un punto\n- Otro punto\n\n**Negrita** y _cursiva_ combinadas.",
+          "id": 9,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:08Z"
+        },
+        {
+          "text": "Este es un mensaje que contiene caracteres especiales: !@#$%^&*()",
+          "id": 10,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:09Z"
+        },
+        {
+          "text": "## Mensaje de Prueba\nPara probar límites, aquí hay un mensaje muy largo:\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, nunc nec congue varius, justo lectus fermentum arcu, non congue felis sem et urna. Integer venenatis convallis erat, vel convallis metus. Aenean a nulla orci. Cras vehicula ligula at nulla volutpat, in fermentum turpis cursus. Fusce ut nisi lorem. Vivamus egestas purus ut erat porttitor, at venenatis mi interdum.",
+          "id": 11,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:10Z"
+        },
+        {
+          "text": " ",
+          "id": 12,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:11Z"
+        },
+        {
+          "text": "El día de la fecha me comí un ratón. Repetido: El día de la fecha me comí un ratón.",
+          "id": 13,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:12Z"
+        },
+        {
+          "text": "¿Esto es una prueba?",
+          "id": 14,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:13Z"
+        },
+        {
+          "text": "Ningún problema",
+          "id": 15,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:14Z"
+        },
+        {
+          "text": "## Lista Anidada\n- Elemento 1\n  - Sub-elemento 1.1\n  - Sub-elemento 1.2\n- Elemento 2\n\n**Conclusión:** Esta es una prueba de Markdown con contenido diverso.",
+          "id": 16,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:15Z"
+        },
+        {
+          "text": "A",
+          "id": 17,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:16Z"
+        },
+        {
+          "text": "Este mensaje tiene un emoji raro: 🤖✨",
+          "id": 18,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:17Z"
+        },
+        {
+          "text": "### Comparativa\n| Producto | Precio | Disponibilidad |\n|----------|--------|----------------|\n| Producto A | $10.00 | En stock |\n| Producto B | $15.00 | Agotado |",
+          "id": 19,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:18Z"
+        },
+        {
+          "text": "Final de prueba",
+          "id": 20,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:19Z"
+        }
+      ]
+    },
+    {
+      "chatID": "0.9831150651378362",
+      "messages": [
+        {
+          "text": "Hola",
+          "id": 1,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:00Z"
+        },
+        {
+          "text": "",
+          "id": 2,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:01Z"
+        },
+        {
+          "text": "¿Qué tal?",
+          "id": 3,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:02Z"
+        },
+        {
+          "text": "## Mensaje Extenso\nEste es un mensaje muy largo que contiene varios elementos de **formato**. Aquí hay una lista:\n- Primer elemento\n- Segundo elemento\n- Tercer elemento\nY un bloque de código:\n```\nprint(\"Hola, mundo!\")\n```",
+          "id": 4,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:03Z"
+        },
+        {
+          "text": "😊👍",
+          "id": 5,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:04Z"
+        },
+        {
+          "text": "¡Hola, mundo!",
+          "id": 6,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:05Z"
+        },
+        {
+          "text": "### Sección con Citas\n> Esta es una cita famosa de alguien importante.\n> - Anónimo\n\nAquí hay más información sobre la cita.",
+          "id": 7,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:06Z"
+        },
+        {
+          "text": "¿Cómo te va? @usuario",
+          "id": 8,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:07Z"
+        },
+        {
+          "text": "No sé qué decir...\n\n#### Subtítulo\n- Un punto\n- Otro punto\n\n**Negrita** y _cursiva_ combinadas.",
+          "id": 9,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:08Z"
+        },
+        {
+          "text": "Este es un mensaje que contiene caracteres especiales: !@#$%^&*()",
+          "id": 10,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:09Z"
+        },
+        {
+          "text": "## Mensaje de Prueba\nPara probar límites, aquí hay un mensaje muy largo:\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque, nunc nec congue varius, justo lectus fermentum arcu, non congue felis sem et urna. Integer venenatis convallis erat, vel convallis metus. Aenean a nulla orci. Cras vehicula ligula at nulla volutpat, in fermentum turpis cursus. Fusce ut nisi lorem. Vivamus egestas purus ut erat porttitor, at venenatis mi interdum.",
+          "id": 11,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:10Z"
+        },
+        {
+          "text": " ",
+          "id": 12,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:11Z"
+        },
+        {
+          "text": "El día de la fecha me comí un ratón. Repetido: El día de la fecha me comí un ratón.",
+          "id": 13,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:12Z"
+        },
+        {
+          "text": "¿Esto es una prueba?",
+          "id": 14,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:13Z"
+        },
+        {
+          "text": "Ningún problema",
+          "id": 15,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:14Z"
+        },
+        {
+          "text": "## Lista Anidada\n- Elemento 1\n  - Sub-elemento 1.1\n  - Sub-elemento 1.2\n- Elemento 2\n\n**Conclusión:** Esta es una prueba de Markdown con contenido diverso.",
+          "id": 16,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:15Z"
+        },
+        {
+          "text": "A",
+          "id": 17,
+          "user": "user",
+          "timeStamp": "2024-10-08T12:00:16Z"
+        },
+        {
+          "text": "Este mensaje tiene un emoji raro: 🤖✨",
+          "id": 18,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:17Z"
+        },
+        {
+          "text": "### Comparativa\n| Producto | Precio | Disponibilidad |\n|----------|--------|----------------|\n| Producto A | $10.00 | En stock |\n| Producto B | $15.00 | Agotado |",
+          "id": 19,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:18Z"
+        },
+        {
+          "text": "Final de prueba",
+          "id": 20,
+          "user": "bot",
+          "timeStamp": "2024-10-08T12:00:19Z"
+        }
+      ]
+    },
+    {
+      "chatID": "chatId",
+      "messages": [
+        {
+          "text": "afd",
+          "id": 1,
+          "user": "user",
+          "timeStamp": "2024-10-09T03:58:37.106Z"
+        },
+        {
+          "text": "sad",
+          "id": 2,
+          "user": "user",
+          "timeStamp": "2024-10-09T04:00:37.554Z"
+        }
+      ]
+    }
+  ]
+}

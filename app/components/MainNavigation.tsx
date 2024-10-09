@@ -1,4 +1,7 @@
 import { NavLink } from '@remix-run/react';
+import { LinksFunction } from '@remix-run/node';
+
+import MainNavigationStyle from './MainNavigation.css?url';
 
 function MainNavigation() {
   return (
@@ -16,3 +19,8 @@ function MainNavigation() {
 }
 
 export default MainNavigation;
+
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: MainNavigationStyle },
+];

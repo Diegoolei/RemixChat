@@ -1,28 +1,41 @@
-html, body {
-  margin: 0; /* Elimina el margen por defecto */
-  padding: 0; /* Elimina el padding por defecto */
-  height: 100%; /* Asegura que el body ocupe toda la altura */
-  overflow: hidden; /* Evita scrollbars en toda la página */
+html,
+body {
+  margin: 0;
+  /* Elimina el margen por defecto */
+  padding: 0;
+  /* Elimina el padding por defecto */
+  height: 100%;
+  /* Asegura que el body ocupe toda la altura */
+  overflow: hidden;
+  /* Evita scrollbars en toda la página */
 }
 
 #content {
   display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: stretch; /* Asegura que ocupe toda la altura */
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  align-items: stretch;
+  /* Asegura que ocupe toda la altura */
+  height: 100vh;
+  /* Ocupa toda la altura de la ventana */
 }
 
 #chat-container {
-  width: 66.33vw; /* Mantiene un ancho fijo */
-  max-width: 900px; /* Establece un ancho máximo si es necesario */
+  width: 66.33vw;
+  /* Mantiene un ancho fijo */
+  max-width: 900px;
+  /* Establece un ancho máximo si es necesario */
   display: flex;
-  flex-direction: column; /* Alinear mensajes y formulario en columna */
-  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  flex-direction: column;
+  /* Alinear mensajes y formulario en columna */
+  height: 100%;
+  /* Asegura que ocupe toda la altura disponible */
 }
 
 /* Media Queries */
 @media (max-width: 600px) {
   #chat-container {
-    width: 100%; /* Ajusta el ancho en pantallas pequeñas */
+    width: 100%;
+    /* Ajusta el ancho en pantallas pequeñas */
   }
 }

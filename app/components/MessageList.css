@@ -1,133 +1,219 @@
-
 #messages {
-    flex-grow: 1; /* Permite que ocupe el espacio disponible */
-    padding: 1rem; /* Espacio interno */
-    background-color: var(--color-primary-bg);
-    display: flex;
-    flex-direction: column; /* Asegura que los mensajes se apilen verticalmente */
-    overflow-y: auto; /* Permite el desplazamiento solo en el contenedor de mensajes */
-  }
-  
-  #messages::-webkit-scrollbar {
-    width: 0; /* Oculta la barra de desplazamiento en WebKit */
-  }
-  
-  .message {
-    display: flex; /* Para alinear el icono y el texto */
-    align-items: center; /* Alinea verticalmente el icono y el texto */
-    margin: 1rem 0; /* Aumenta el margen a 1rem (o el valor que prefieras) */
-    padding: 0.5rem;
-    border-radius: 8px;
-    /* Elimina el max-width */
-    flex-grow: 1; /* Permite que el mensaje ocupe el espacio disponible */
-  }
-  
-  .message-content p {
-    margin: 0.5rem 0; /* Espaciado entre párrafos */
-  }
-  
-  .message-content h2 {
-    margin: 0.5rem 0; /* Espaciado para encabezados */
-  }
-  
-  .message.user {
-    background-color: var(--color-primary-white);
-    align-self: flex-end; /* Alinea el mensaje del usuario a la derecha */
-    text-align: right;
-    max-width: 70%; /* Limita el ancho del mensaje del usuario */
-  }
-  
-  .message-with-icon {
-    display: flex; /* Alinear icono y texto en línea */
-    align-items: flex-start; /* Alinear el icono en la parte superior */
-    margin-bottom: 10px; /* Espacio entre los mensajes */
-  }
-  
-  .icon-container {
-    margin-right: 10px; /* Espacio entre el icono y el mensaje */
-    flex-shrink: 0; /* Evita que el ícono se achique */
-  }
-  
-  .icon {
-    width: 40px; /* Ajusta según sea necesario */
-    height: 40px; /* Ajusta según sea necesario */
-    border-radius: 50%; /* Redondear el icono si es necesario */
-  }
-  
-  .message.bot {
-    background-color: transparent; /* Sin fondo para los mensajes del bot */
-    /* align-self: flex-start; Alinea el mensaje del bot a la izquierda */
-    padding: 0.5rem; /* Espacio interno */
-    border-radius: 8px; /* Bordes redondeados */
-    margin-bottom: 1rem; /* Aumenta el espacio entre mensajes del bot */
-    width: 100%; /* Asegura que el mensaje del bot ocupe todo el ancho del contenedor */
-  }
-  
-  .message.bot a {
-    color: blue; /* Color de los enlaces */
-    text-decoration: underline; /* Subrayar los enlaces */
-  }
-  
-  span {
-    flex: 1; /* Para que el texto ocupe el espacio restante */
-  }
-  
-  #message-form {
-    display: flex;
-    padding: 1rem;
-    background-color: var(--color-primary-bg);
-    border-top: 1px solid var(--color-primary-border); /* Para definir separación visual */
-  }
-  
-  .input-container {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    flex-grow: 1;
-    position: relative; /* Para posicionar el botón */
-  }
-  
-  #message-form input {
-    flex-grow: 1;
-    padding: 0.75rem 3rem; /* Aumentar el padding a los lados para espacio para el botón */
-    border: 1px solid var(--color-primary-border); /* Agrega un borde al input */
-    border-radius: 24px; /* Bordes redondeados */
-    background-color: var(--color-primary-white);
-    color: var(--color-primary-800);
-  }
-  
-  .input-container button {
-    color: white;
-    border: none;
-    border-radius: 50%; /* Forma redonda */
-    padding: 0.5rem; /* Padding interno */
-    position: absolute; /* Posiciona el botón dentro del input */
-    right: 10px; /* Ajusta la distancia desde el borde derecho del input */
-    top: 50%; /* Centra verticalmente el botón */
-    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
-    width: 40px; /* Ancho del botón */
-    height: 40px; /* Alto del botón */
-    display: flex; /* Para centrar el ícono */
-    align-items: center; /* Centra verticalmente el ícono */
-    justify-content: center; /* Centra horizontalmente el ícono */
-  }
-  
-  .input-container button:hover {
-    background-color: var(--color-primary-300);
-    color: var(--color-primary-200);
-  }
-  
-  .input-container button img {
-    width: 20px; /* Tamaño del ícono */
-    height: 20px; /* Tamaño del ícono */
-    background-color: transparent;
-  }
-  
-  .form-actions button:hover {
-    background-color: var(--color-primary-600);
-  }
-  
-  .form-actions button:disabled {
-    background-color: var(--color-primary-300);
-    color: var(--color-primary-200);
-    cursor: not-allowed;
-  }
+  flex-grow: 1;
+  /* Permite que ocupe el espacio disponible */
+  padding: 1rem;
+  /* Espacio interno */
+  background-color: var(--color-primary-bg);
+  display: flex;
+  flex-direction: column;
+  /* Asegura que los mensajes se apilen verticalmente */
+  overflow-y: auto;
+  /* Permite el desplazamiento solo en el contenedor de mensajes */
+}
+
+#messages::-webkit-scrollbar {
+  width: 0;
+  /* Oculta la barra de desplazamiento en WebKit */
+}
+
+.message {
+  display: flex;
+  /* Para alinear el icono y el texto */
+  align-items: center;
+  /* Alinea verticalmente el icono y el texto */
+  margin: 1rem 0;
+  /* Aumenta el margen a 1rem (o el valor que prefieras) */
+  padding: 0.5rem;
+  border-radius: 8px;
+  /* Elimina el max-width */
+}
+
+.message-content p {
+  margin: 0.5rem 0;
+  /* Espaciado entre párrafos */
+}
+
+.message-content h2 {
+  margin: 0.5rem 0;
+  /* Espaciado para encabezados */
+}
+
+.message.user {
+  background-color: var(--color-primary-white);
+  align-self: flex-end;
+  /* Alinea el mensaje del usuario a la derecha */
+  text-align: right;
+  max-width: 70%;
+  /* Limita el ancho del mensaje del usuario */
+}
+
+.message-with-icon {
+  display: flex;
+  align-items: flex-start;
+}
+
+.message-with-icon h1,
+.message-with-icon h2,
+.message-with-icon h3 {
+  margin: 0.5rem 0;
+  /* Espacio entre los títulos y el texto */
+  font-weight: bold;
+  /* Puedes ajustar esto según tus preferencias */
+}
+
+.message-with-icon ul,
+.message-with-icon ol {
+  margin: 0.5rem 0 0.5rem 1.5rem;
+  /* Espacio para las listas */
+}
+
+.message-with-icon li {
+  margin: 0.25rem 0;
+  /* Espacio entre los elementos de la lista */
+}
+
+.message-with-icon li::marker {
+  content: "•"; /* Para listas desordenadas (puedes personalizar el símbolo) */
+}
+
+.message-with-icon table {
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Para unir bordes */
+  margin: 1rem 0; /* Espacio alrededor de la tabla */
+}
+
+.message-with-icon th,
+.message-with-icon td {
+  border: 1px solid #ddd; /* Borde de las celdas */
+  padding: 0.5rem; /* Espacio interno */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.message-with-icon th {
+  background-color: #f2f2f2; /* Fondo para encabezados */
+}
+
+.message-with-icon tr:nth-child(even) {
+  background-color: #f9f9f9; /* Fondo alterno para filas */
+}
+
+.icon-container {
+  margin-right: 10px;
+  /* Espacio entre el icono y el mensaje */
+  flex-shrink: 0;
+  /* Evita que el ícono se achique */
+}
+
+.icon {
+  width: 40px;
+  /* Ajusta según sea necesario */
+  height: 40px;
+  /* Ajusta según sea necesario */
+  border-radius: 50%;
+  /* Redondear el icono si es necesario */
+}
+
+.message.bot {
+  background-color: transparent;
+  /* Sin fondo para los mensajes del bot */
+  /* align-self: flex-start; Alinea el mensaje del bot a la izquierda */
+  padding: 0.5rem;
+  /* Espacio interno */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  margin-bottom: 1rem;
+  /* Aumenta el espacio entre mensajes del bot */
+  width: 100%;
+  /* Asegura que el mensaje del bot ocupe todo el ancho del contenedor */
+}
+
+.message.bot a {
+  color: blue;
+  /* Color de los enlaces */
+  text-decoration: underline;
+  /* Subrayar los enlaces */
+}
+
+span {
+  flex: 1;
+  /* Para que el texto ocupe el espacio restante */
+}
+
+#message-form {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--color-primary-bg);
+  border-top: 1px solid var(--color-primary-border);
+  /* Para definir separación visual */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  flex-grow: 1;
+  position: relative;
+  /* Para posicionar el botón */
+}
+
+#message-form input {
+  flex-grow: 1;
+  padding: 0.75rem 3rem;
+  /* Aumentar el padding a los lados para espacio para el botón */
+  border: 1px solid var(--color-primary-border);
+  /* Agrega un borde al input */
+  border-radius: 24px;
+  /* Bordes redondeados */
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-800);
+}
+
+.input-container button {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  /* Forma redonda */
+  padding: 0.5rem;
+  /* Padding interno */
+  position: absolute;
+  /* Posiciona el botón dentro del input */
+  right: 10px;
+  /* Ajusta la distancia desde el borde derecho del input */
+  top: 50%;
+  /* Centra verticalmente el botón */
+  transform: translateY(-50%);
+  /* Ajuste para centrar verticalmente */
+  width: 40px;
+  /* Ancho del botón */
+  height: 40px;
+  /* Alto del botón */
+  display: flex;
+  /* Para centrar el ícono */
+  align-items: center;
+  /* Centra verticalmente el ícono */
+  justify-content: center;
+  /* Centra horizontalmente el ícono */
+}
+
+.input-container button:hover {
+  background-color: var(--color-primary-300);
+  color: var(--color-primary-200);
+}
+
+.input-container button img {
+  width: 20px;
+  /* Tamaño del ícono */
+  height: 20px;
+  /* Tamaño del ícono */
+  background-color: transparent;
+}
+
+.form-actions button:hover {
+  background-color: var(--color-primary-600);
+}
+
+.form-actions button:disabled {
+  background-color: var(--color-primary-300);
+  color: var(--color-primary-200);
+  cursor: not-allowed;
+}

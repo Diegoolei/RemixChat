@@ -1,0 +1,40 @@
+#chatListContainer {
+    overflow: scroll;
+}
+
+#main-navigation {
+    width: 10rem;
+    background-color: var(--color-primary-100);
+    position: fixed;
+    height: 100%;
+    padding: 2rem 0;
+    z-index: 1000; /* Alto para que esté encima */
+}
+
+#main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Alinear verticalmente */
+}
+
+.nav-item {
+    padding: 1rem;
+    /* Espaciado interno para cada elemento */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-primary-bg);
+    /* Color del texto */
+    display: block;
+    /* Asegurar que el enlace ocupe todo el área del elemento */
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    color: var(--color-secondary-200);
+    /* Color al pasar el ratón */
+}

@@ -4,9 +4,9 @@ import styles from './ChatList.css?url';
 
 
 interface Chats {
-  id: string;
-  title: string;
-  content: string;
+  chatID: string;
+  firstUserMessage: string;
+  timeStamp: Date;
 }
 
 interface ChatListProps {
@@ -15,34 +15,27 @@ interface ChatListProps {
 
 function ChatList({ chats }: ChatListProps) {
   return (
-    <ul id="chat-list">
+    <div id="chat-list">
       {chats.map((chat, index) => (
-        <li key={chat.id} className="chat">
-          <Link to={`/chats/${chat.id}`} className="chat-link">
+        <li key={chat.chatID} className="chat">
+          <Link to={`/chats/${chat.chatID}`} className="chat-link">
             <article>
               <header>
                 <ul className="chat-meta">
                   <li>#{index + 1}</li>
                   <li>
-                    <time dateTime={chat.id}>
-                      {new Date(chat.id).toLocaleDateString('en-US', {
-                        day: 'numeric',
-                        month: 'short',
-                        year: 'numeric',
-                        hour: '2-digit',
-                        minute: '2-digit',
-                      })}
+                    <time>
+                      {chat.timeStamp.toString()}
                     </time>
                   </li>
                 </ul>
-                <h2>{chat.title}</h2>
+                <h2>{chat.firstUserMessage}</h2>
               </header>
-              <p>{chat.content}</p>
             </article>
           </Link>
         </li>
       ))}
-    </ul>
+    </div>
   );
 }
 

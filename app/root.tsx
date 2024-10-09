@@ -9,7 +9,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
-import MainNavigation from "./components/MainNavigation";
+import MainNavigation, { links as MainNavigationLinks } from "./components/MainNavigation";
 
 import "./styles/tailwind.css";
 import mainStyle from "app/styles/main.css?url";
@@ -17,6 +17,7 @@ import mainStyle from "app/styles/main.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: mainStyle },
+  ...MainNavigationLinks(),
 ];
 
 
@@ -40,7 +41,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
-
 
 
 export default function App() {
