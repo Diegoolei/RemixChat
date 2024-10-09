@@ -1,5 +1,5 @@
 import { LinksFunction } from "@remix-run/node";
-import { Form, useActionData, useNavigation, useRouteError } from '@remix-run/react';
+import { Form, useNavigation, useRouteError } from '@remix-run/react';
 import { useState } from 'react';
 
 import NewMessageStyle from './NewMessage.css?url';

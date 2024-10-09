@@ -32,6 +32,18 @@ body {
   /* Asegura que ocupe toda la altura disponible */
 }
 
+.logo {
+  position: absolute;
+  top: 25rem;
+  right: 50rem;
+  width: 40px;
+  /* Ajusta según sea necesario */
+  height: 40px;
+  /* Ajusta según sea necesario */
+  border-radius: 50%;
+  /* Redondear el icono si es necesario */
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
   #chat-container {

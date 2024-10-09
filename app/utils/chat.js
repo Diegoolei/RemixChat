@@ -1,7 +1,11 @@
 import fs from 'fs/promises';
 
 export async function getStoredChats() {
-  const rawFileContent = await fs.readFile('messages.json', { encoding: 'utf-8' });
+  let rawFileContent = await fs.readFile('messages.json', { encoding: 'utf-8' });
+  if (!rawFileContent) {
+    initChatFile();
+    rawFileContent = await fs.readFile('messages.json', { encoding: 'utf-8' });
+  }
   const data = JSON.parse(rawFileContent);
   const storedChats = data.chat ?? []; // Acceder a la clave correcta
 
@@ -20,4 +24,8 @@ export async function getStoredChats() {
 
 export function storeChat(chats) {
   return fs.writeFile('messages.json', JSON.stringify({ chats: chats || [] }));
+}
+
+export function initChatFile() {
+  fs.writeFile('messages.json', JSON.stringify({ chat: [] }));
 }

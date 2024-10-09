@@ -12,6 +12,9 @@ export default function ChatPage() {
     <main id="content">
       <div id="chat-container">
         <MessageList messages={Messages} />
+        {(!Messages || Messages.length === 0) && (
+          <img className="logo" src="/logo-light.png" />
+        )}
         <NewMessage />
       </div>
     </main>
@@ -26,7 +29,7 @@ export let loader: LoaderFunction = async ({ params }) => {
 export const action: ActionFunction = async ({ request, params }) => {
   const formData = await request.formData();
   const messageData = Object.fromEntries(formData);
-  const {chatId} = params;
+  const { chatId } = params;
 
   const existingMessages = await getStoredMessages(chatId);
   messageData.id = existingMessages.length + 1;
@@ -57,9 +60,8 @@ export function ErrorBoundary() {
   }
 
   let errorMessage = "Unknown error";
-  if (isRouteErrorResponse(error)) {
-    errorMessage = error.data.message;
-  }
+  errorMessage = error.data.message;
+
 
   return (
     <div className="error">
