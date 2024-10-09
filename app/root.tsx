@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
   useRouteError,
   isRouteErrorResponse,
+  MetaFunction,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
@@ -71,3 +72,18 @@ export function ErrorBoundary() {
     </div>
   );
 }
+
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: " ChatAI | CMCABA" },
+    {
+      property: "og:title",
+      content: "¡Bienvenido a el chat oficial de CMCABA!",
+    },
+    {
+      name: "description",
+      content: "¡Bienvenido a el chat oficial de CMCABA!",
+    },
+  ];
+};

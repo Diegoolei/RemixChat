@@ -1,4 +1,4 @@
-import { json, redirect, useLoaderData, useRouteError, isRouteErrorResponse } from "@remix-run/react";
+import { json, redirect, useLoaderData, useRouteError, isRouteErrorResponse, MetaFunction } from "@remix-run/react";
 import { LinksFunction, ActionFunction, LoaderFunction } from "@remix-run/node";
 
 import NewMessage, { links as newMessageLinks } from "~/components/NewMessage";
@@ -71,3 +71,18 @@ export function ErrorBoundary() {
     </div>
   );
 }
+
+export const meta: MetaFunction = ({ location }) => {
+  const searchQuery =location.pathname.split("/").pop();
+  return [
+    { title: "ChatAI | CMCABA" },
+    {
+      property: "og:title",
+      content: searchQuery,
+    },
+    {
+      name: "description",
+      content: "¡Bienvenido a el chat oficial de CMCABA!",
+    },
+  ];
+};
